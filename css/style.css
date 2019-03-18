@@ -1,88 +1,22 @@
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-body {
-  font-family: sans-serif;
-  background: #8395a7;
-}
+body { font-family: sans-serif; background: #8395a7; }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  color: #079992;
-  -webkit-font-feature-settings: "smcp", "zero";
-          font-feature-settings: "smcp", "zero";
-  font-style: oblique 40deg;
-  font-size: 2.2em;
-  text-align: center;
-  border: 2px solid #ffffff;
-  background-color: #8395a7;
-}
+.container { max-width: 1200px; margin: 0 auto; color: #079992; -webkit-font-feature-settings: "smcp", "zero"; font-feature-settings: "smcp", "zero"; font-style: oblique 40deg; font-size: 2.2em; text-align: center; border: 2px solid #ffffff; background-color: #8395a7; }
 
-.carousel-cell {
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-  width: 100%;
-  margin-right: 5vw;
-  height: 63vh;
-  filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  background-size: cover;
-}
+.carousel-cell { border-radius: 5px; counter-increment: carousel-cell; width: 100%; margin-right: 5vw; height: 63vh; filter: grayscale(100%); -moz-filter: grayscale(100%); -webkit-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); background-size: cover; }
 
-.carousel-cell:hover {
-  filter: none;
-}
+.carousel-cell:hover { filter: none; }
 
 /* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: #ffffff;
-}
+.carousel-cell:before { display: block; text-align: center; content: counter(carousel-cell); line-height: 200px; font-size: 80px; color: #ffffff; }
 
-.progress-bar {
-  height: 20px;
-  width: 0;
-  background: #079992;
-}
+.progress-bar { height: 20px; width: 0; background: #079992; }
 
-.button {
-  text-decoration: none;
-  border: 1px solid #ffffff;
-  border-radius: 12px;
-  padding: 6px;
-  background-color: #079992;
-  width: 150px;
-  color: #ffffff;
-  font-size: 22px;
-  padding-top: 15px;
-}
+.button { text-decoration: none; border: 1px solid #ffffff; border-radius: 12px; padding: 6px; background-color: #079992; width: 150px; color: #ffffff; font-size: 22px; padding-top: 15px; }
 
-h1 {
-  color: #ffffff;
-}
+h1 { color: #ffffff; }
 
-a {
-  text-decoration: none;
-  border: 1px solid;
-  border-radius: 12px;
-  padding: 6px;
-  background-color: #079992;
-  color: #ffffff;
-  font-size: 22px;
-}
+a { text-decoration: none; border: 1px solid; border-radius: 12px; padding: 6px; background-color: #079992; color: #ffffff; font-size: 22px; }
 
-@media (max-width: 767px) {
-  .carousel-cell {
-    height: 15vh;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 767px) { .carousel-cell { height: 15vh; } }
