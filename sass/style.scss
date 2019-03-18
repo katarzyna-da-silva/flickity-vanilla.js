@@ -67,18 +67,20 @@ body {
     background: $text-color;
 }
 
-.button {
-    text-decoration: none;
-    border: 1px solid $text;
-    @include border-radius(12px);
-    padding: 6px;
-    background-color: $text-color;
-    ;
-    width: 150px;
-    color: $text;
-    font-size: 22px;
-    padding-top: 15px;
+button {
+	position: absolute;
+	height: 25px;
+	top: calc(50vh - 35px);
+	border-radius: 5%;
+	border: none;
 }
+
+button a {
+	text-decoration: none;
+	color: black;
+}
+
+
 
 h1 {
     color: $text;
