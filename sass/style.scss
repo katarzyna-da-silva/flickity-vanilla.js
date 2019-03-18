@@ -1,7 +1,10 @@
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
-body { font-family: sans-serif; }
-
+body {
+    font-family: sans-serif;
+}
 
 .container {
     max-width: 1200px;
@@ -14,6 +17,7 @@ body { font-family: sans-serif; }
     border: 2px solid white;
     background-color: #8395a7;
 }
+
 .carousel-cell {
     border-radius: 5px;
     counter-increment: carousel-cell;
@@ -22,32 +26,61 @@ body { font-family: sans-serif; }
     width: 100%;
     margin-right: 5vw;
     height: 63vh;
-    filter:grayscale(100%);
-    -moz-filter:grayscale(100%);
-    -webkit-filter:grayscale(100%);
-    -o-filter:grayscale(100%);
-    -ms-filter:grayscale(100%);
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
     background-size: cover;
+
     &:hover {
         filter: none;
     }
-    }
+}
 
-    .carousel-cell:before {
-        display: block;
-        text-align: center;
-        content: counter(carousel-cell);
-        line-height: 200px;
-        font-size: 80px;
-        color: white;
-      }
+/* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
 
-      .button {
-        font-size: 22px;
-        padding: 2px;
-      }
-      
-      .button-group {
-        padding-top: 4vh;
-        margin-left: 50vw;
-      }
+.button {
+    font-size: 22px;
+}
+
+.button-group {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 0;
+    background: #333;
+}
+
+.flickity-page-dots {
+    bottom: -40px;
+}
+
+.button {
+    font-size: 22px;
+}
+
+.button-group {
+    margin-bottom: 20px;
+    margin-left: 45vw;
+    padding-top: 5vh;
+}
+
+.view a {
+    text-decoration: none;
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 4px;
+    color: $border-color;
+    background-color: $background-color-vision;
+  }

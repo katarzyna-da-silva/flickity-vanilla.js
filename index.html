@@ -6,14 +6,18 @@
     <link rel="stylesheet" href="./vendor/flickity.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="/path/to/flickity.css" media="screen" />
-
     <title>vanilla.js</title>
   </head>
   <body>
-    <div
-      class="carousel"
-      data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'
-    >
+
+        <p>
+                <a href="#carousel-cell1">Cell 1</a>,
+                <a href="#carousel-cell2">Cell 2</a>,
+                <a href="#carousel-cell3">Cell 3</a>,
+                <a href="#carousel-cell4">Cell 4</a>,
+                <a href="#carousel-cell5">Cell 5</a>
+              </p>
+    <div class="carousel">
       <div
         style="background-image: url('http://wypozyczalniasamochodowwwarszawie.pl/wp-content/uploads/2016/02/audi-r8-slider-wypozyczalnia-samochodow-w-warszawie.jpg');"
         class="carousel-cell carousel-cell-image"
@@ -49,13 +53,12 @@
         <div class="container">the most beautiful cars in the world</div>
       </div>
     </div>
-    <div class="button-group">
-        <button class="button">1</button>
-        <button class="button">2</button>
-        <button class="button">3</button>
-        <button class="button">4</button>
-        <button class="button">5</button>
-      </div>
+    <div class="progress-bar"></div>
+    <div class="btn">
+            <button class="button button-previous">Previous</button>
+            <button class="button button-next">Next</button>
+        </div>
+        <div>
     <script src="/path/to/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/flickity-hash@1/hash.js"></script>

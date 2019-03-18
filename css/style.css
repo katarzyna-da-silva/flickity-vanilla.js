@@ -39,6 +39,7 @@ body {
   filter: none;
 }
 
+/* cell number */
 .carousel-cell:before {
   display: block;
   text-align: center;
@@ -50,11 +51,29 @@ body {
 
 .button {
   font-size: 22px;
-  padding: 2px;
 }
 
 .button-group {
-  padding-top: 4vh;
-  margin-left: 50vw;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background: #333;
+}
+
+.flickity-page-dots {
+  bottom: -40px;
+}
+
+.button {
+  font-size: 22px;
+}
+
+.button-group {
+  margin-bottom: 20px;
+  margin-left: 45vw;
+  padding-top: 5vh;
 }
 /*# sourceMappingURL=style.css.map */
