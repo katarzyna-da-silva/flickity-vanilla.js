@@ -1,28 +1,41 @@
+$color-decoration: #95afc0;
+$text-color: #079992;
+$text: #ffffff;
+$body-color: #8395a7;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: sans-serif;
+    background: $body-color;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    color: #ffffff;
+    color: $text-color;
+    ;
     font-feature-settings: "smcp", "zero";
     font-style: oblique 40deg;
     font-size: 2.2em;
     text-align: center;
-    border: 2px solid white;
-    background-color: #8395a7;
+    border: 2px solid $text;
+    background-color: $body-color;
 }
 
 .carousel-cell {
-    border-radius: 5px;
+    @include border-radius(5px);
     counter-increment: carousel-cell;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     margin-right: 5vw;
     height: 63vh;
@@ -45,42 +58,45 @@ body {
     content: counter(carousel-cell);
     line-height: 200px;
     font-size: 80px;
-    color: white;
-}
-
-.button {
-    font-size: 22px;
-}
-
-.button-group {
-    margin-bottom: 20px;
+    color: $text;
 }
 
 .progress-bar {
     height: 20px;
     width: 0;
-    background: #333;
-}
-
-.flickity-page-dots {
-    bottom: -40px;
+    background: $text-color;
 }
 
 .button {
+    text-decoration: none;
+    border: 1px solid $text;
+    @include border-radius(12px);
+    padding: 6px;
+    background-color: $text-color;
+    ;
+    width: 150px;
+    color: $text;
+    font-size: 22px;
+    padding-top: 15px;
+}
+
+h1 {
+    color: $text;
+}
+
+a {
+    text-decoration: none;
+    border: 1px solid;
+    @include border-radius(12px);
+    padding: 6px;
+    background-color: $text-color;
+    color: $text;
     font-size: 22px;
 }
 
-.button-group {
-    margin-bottom: 20px;
-    margin-left: 45vw;
-    padding-top: 5vh;
-}
+@media (max-width: 767px) {
 
-.view a {
-    text-decoration: none;
-    border: 1px solid grey;
-    border-radius: 6px;
-    padding: 4px;
-    color: $border-color;
-    background-color: $background-color-vision;
-  }
+    .carousel-cell {
+        height: 15vh;
+    }
+}
