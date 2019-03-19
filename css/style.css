@@ -5,6 +5,8 @@
 body {
   font-family: sans-serif;
   background: #8395a7;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -17,6 +19,7 @@ body {
   font-size: 2.2em;
   text-align: center;
   border: 2px solid #ffffff;
+  width: 350px;
   background-color: #8395a7;
 }
 
@@ -26,6 +29,7 @@ body {
   width: 100%;
   margin-right: 5vw;
   height: 63vh;
+  min-height: 250px;
   filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -49,36 +53,28 @@ body {
 }
 
 .progress-bar {
-  height: 20px;
-  width: 0;
   background: #079992;
 }
 
 button {
   position: absolute;
-  height: 25px;
+  width: 130px;
+  height: 50px;
   top: calc(50vh - 35px);
-  border-radius: 5%;
-  border: none;
+  border: 1px solid #079992;
+  border-radius: 12px;
+  padding: 8px;
+  background-color: #079992;
+  font-size: 22px;
 }
 
 button a {
   text-decoration: none;
-  color: black;
+  color: #ffffff;
 }
 
 h1 {
   color: #ffffff;
-}
-
-a {
-  text-decoration: none;
-  border: 1px solid;
-  border-radius: 12px;
-  padding: 6px;
-  background-color: #079992;
-  color: #ffffff;
-  font-size: 22px;
 }
 
 @media (max-width: 767px) {

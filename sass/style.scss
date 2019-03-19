@@ -18,6 +18,8 @@ $body-color: #8395a7;
 body {
     font-family: sans-serif;
     background: $body-color;
+    margin: 0;
+	padding: 0;
 }
 
 .container {
@@ -30,6 +32,7 @@ body {
     font-size: 2.2em;
     text-align: center;
     border: 2px solid $text;
+    width: 350px;
     background-color: $body-color;
 }
 
@@ -39,6 +42,7 @@ body {
     width: 100%;
     margin-right: 5vw;
     height: 63vh;
+    min-height: 250px;
     filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
@@ -62,39 +66,31 @@ body {
 }
 
 .progress-bar {
-    height: 20px;
-    width: 0;
     background: $text-color;
 }
 
+
 button {
-	position: absolute;
-	height: 25px;
+    position: absolute;
+    width: 130px;
+	height: 50px;
 	top: calc(50vh - 35px);
-	border-radius: 5%;
-	border: none;
+    border: 1px solid $text-color;
+    @include border-radius(12px);
+    padding: 8px;
+    background-color: $text-color;
+    font-size: 22px;
+
+    a {
+	    text-decoration: none;
+	    color: $text;
+    }
 }
-
-button a {
-	text-decoration: none;
-	color: black;
-}
-
-
 
 h1 {
     color: $text;
 }
 
-a {
-    text-decoration: none;
-    border: 1px solid;
-    @include border-radius(12px);
-    padding: 6px;
-    background-color: $text-color;
-    color: $text;
-    font-size: 22px;
-}
 
 @media (max-width: 767px) {
 
