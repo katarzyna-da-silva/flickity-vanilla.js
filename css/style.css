@@ -1,22 +1,84 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-body { font-family: sans-serif; background: #8395a7; margin: 0; padding: 0; }
+body {
+  font-family: sans-serif;
+  background: #1e272e;
+  margin: 0;
+  padding: 0;
+}
 
-.container { max-width: 1200px; margin: 0 auto; color: #079992; -webkit-font-feature-settings: "smcp", "zero"; font-feature-settings: "smcp", "zero"; font-style: oblique 40deg; font-size: 2.2em; text-align: center; border: 2px solid #ffffff; width: 350px; background-color: #8395a7; }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #1e272e;
+  font-style: oblique 40deg;
+  font-size: 2.2em;
+  text-align: center;
+  border: 2px solid #ffffff;
+  width: 350px;
+  background-color: #feca57;
+}
 
-.carousel-cell { border-radius: 5px; counter-increment: carousel-cell; width: 100%; margin-right: 5vw; height: 63vh; min-height: 250px; filter: grayscale(100%); -moz-filter: grayscale(100%); -webkit-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); background-size: cover; }
+.carousel-cell {
+  border-radius: 6px;
+  counter-increment: carousel-cell;
+  width: 100%;
+  margin-right: 5vw;
+  height: 45vh;
+  min-height: 250px;
+  filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  overflow: hidden;
+  background-size: cover;
+}
 
-.carousel-cell:hover { filter: none; }
+.carousel-cell:hover {
+  filter: none;
+}
 
 /* cell number */
-.carousel-cell:before { display: block; text-align: center; content: counter(carousel-cell); line-height: 200px; font-size: 80px; color: #ffffff; }
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: #ffffff;
+}
 
-.progress-bar { background: #079992; }
+.progress-bar {
+  background: #feca57;
+}
 
-button { position: absolute; width: 130px; height: 50px; top: calc(50vh - 35px); border: 1px solid #079992; border-radius: 12px; padding: 8px; background-color: #079992; font-size: 22px; }
+.button {
+  position: absolute;
+  width: 130px;
+  height: 50px;
+  top: calc(50vh - 35px);
+  border: 1px solid #feca57;
+  background-color: #feca57;
+  border-radius: 12px;
+  padding: 8px;
+  font-size: 22px;
+}
 
-button a { text-decoration: none; color: #ffffff; }
+.button a {
+  text-decoration: none;
+  color: #1e272e;
+}
 
-h1 { color: #ffffff; }
+h1 {
+  color: #ffffff;
+}
 
-@media (max-width: 767px) { .carousel-cell { height: 15vh; } }
+@media (max-width: 767px) {
+  .carousel-cell {
+    height: 15vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */

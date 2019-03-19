@@ -1,7 +1,7 @@
 $color-decoration: #95afc0;
-$text-color: #079992;
+$text-color: #feca57;
 $text: #ffffff;
-$body-color: #8395a7;
+$body-color: #1e272e;
 
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
@@ -19,37 +19,35 @@ body {
     font-family: sans-serif;
     background: $body-color;
     margin: 0;
-	padding: 0;
+    padding: 0;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    color: $text-color;
-    ;
-    font-feature-settings: "smcp", "zero";
+    color: $body-color;
     font-style: oblique 40deg;
     font-size: 2.2em;
     text-align: center;
     border: 2px solid $text;
     width: 350px;
-    background-color: $body-color;
+    background-color: $text-color;
 }
 
 .carousel-cell {
-    @include border-radius(5px);
+    @include border-radius(6px);
     counter-increment: carousel-cell;
     width: 100%;
     margin-right: 5vw;
-    height: 63vh;
+    height: 45vh;
     min-height: 250px;
     filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
+    overflow: hidden;
     background-size: cover;
-
     &:hover {
         filter: none;
     }
@@ -70,20 +68,20 @@ body {
 }
 
 
-button {
+.button {
     position: absolute;
     width: 130px;
 	height: 50px;
 	top: calc(50vh - 35px);
     border: 1px solid $text-color;
+    background-color: $text-color; 
     @include border-radius(12px);
     padding: 8px;
-    background-color: $text-color;
     font-size: 22px;
 
     a {
 	    text-decoration: none;
-	    color: $text;
+	    color: $body-color;
     }
 }
 
