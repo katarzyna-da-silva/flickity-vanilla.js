@@ -1,60 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="./vendor/normalize.css" media="screen" />
-    <link rel="stylesheet" href="./vendor/flickity.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>vanilla.js</title>
-  </head>
-  <body>
-        <h1>Flickity - hash</h1>
-        <p>
-          <a href="#carousel-cell1">1</a>
-          <a href="#carousel-cell2">2</a>
-          <a href="#carousel-cell3">3</a>
-          <a href="#carousel-cell4">4</a>
-          <a href="#carousel-cell5">5</a>
-        </p>
-    <div class="carousel">
-      <div
-        style="background-image: url('http://wypozyczalniasamochodowwwarszawie.pl/wp-content/uploads/2016/02/audi-r8-slider-wypozyczalnia-samochodow-w-warszawie.jpg');"
-        class="carousel-cell carousel-cell-image">
-        <div class="container">the best salons in the world</div>
-      </div>
-      <div
-        style="background-image: url('https://a-static.besthdwallpaper.com/pagani-huayra-super-car-wallpaper-1920x600-1277_57.jpg');"
-        class="carousel-cell carousel-cell-image">
-        <div class="container">
-          favorable ratio of engine power to own weight
-        </div>
-      </div>
-      <div
-        style="background-image: url('https://www.lambonb.com/assets/misc/12703/1011533.jpg');"
-        class="carousel-cell carousel-cell-image">
-    <div class="container">test today</div>
-      </div>
-      <div
-        style="background-image: url('https://s3.eu-west-2.amazonaws.com/luxurylondon.co.uk-storage-bucket-001/images/080518115402/hero/london-concours-june-2018-classic-supercars-london-3-xl.jpg');"
-        class="carousel-cell carousel-cell-image">
-        <div class="container">only here</div>
-      </div>
-      <div
-        style="background-image: url('https://s-media-cache-ak0.pinimg.com/originals/ba/ff/df/baffdfa302aff60e510c91431467856c.jpg');"
-        class="carousel-cell carousel-cell-image">
-        <div class="container">the most beautiful cars in the world</div>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="./vendor/normalize.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="./vendor/flickity.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <title>vanilla.js</title>
+</head>
+
+<body>
+    <h1>Flickity - hash</h1>
+<button id="reset">reset</button>
+  <div class="carousel">
+    <div style="background-image: url('http://wypozyczalniasamochodowwwarszawie.pl/wp-content/uploads/2016/02/audi-r8-slider-wypozyczalnia-samochodow-w-warszawie.jpg');"
+      class="carousel-cell carousel-cell-image" id="carousel-cell1">
+      <div class="container">the best salons in the world</div>
+    </div>
+    <div style="background-image: url('https://a-static.besthdwallpaper.com/pagani-huayra-super-car-wallpaper-1920x600-1277_57.jpg');"
+      class="carousel-cell carousel-cell-image" id="carousel-cell2">
+      <div class="container">
+        favorable ratio of engine power to own weight
       </div>
     </div>
+    <div style="background-image: url('https://www.lambonb.com/assets/misc/12703/1011533.jpg');" class="carousel-cell carousel-cell-image" id="carousel-cell3">
+      <div class="container">test today</div>
+    </div>
+    <div style="background-image: url('https://s3.eu-west-2.amazonaws.com/luxurylondon.co.uk-storage-bucket-001/images/080518115402/hero/london-concours-june-2018-classic-supercars-london-3-xl.jpg');"
+      class="carousel-cell carousel-cell-image" id="carousel-cell4">
+      <div class="container">only here</div>
+    </div>
+    <div style="background-image: url('https://s-media-cache-ak0.pinimg.com/originals/ba/ff/df/baffdfa302aff60e510c91431467856c.jpg');"
+      class="carousel-cell carousel-cell-image" id="carousel-cell5">
+      <div class="container">the most beautiful cars in the world</div>
+    </div>
   </div>
-    <div class="progress-bar"></div>
-    <div class="btn">
-            <button class="button button-previous">Previous</button>
-            <button class="button button-next">Next</button>
-</div>
+  <div class="progress-bar"></div>
+  <div class="btn">
+    <button class="button button-previous">Previous</button>
+    <button class="button button-next">Next</button>
+  </div>
 
-    <script src="vendor/flickity.pkgd.min.js"></script>
-    <script src="vendor/hash.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  <script src="vendor/flickity.pkgd.min.js"></script>
+  <script src="vendor/hash.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
