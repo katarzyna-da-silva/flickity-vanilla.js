@@ -1,23 +1,22 @@
+//MUSTACHE pętla
 
-/************* MUSTACHE pętla *****************/
 var listItems = '';
 var templateItem = document.getElementById('template-product-item').innerHTML;
-//Mustache.parse(templateItem);
 
-for(var i = 0; i < carouselData.length; i++){
-		console.log(carouselData);
-		listItems += Mustache.render(templateItem, carouselData[i]);
-	};
-
-//var fullList = Mustache.render(listItems);
+for (var i = 0; i < carouselData.length; i++) {
+    console.log(carouselData);
+    listItems += Mustache.render(templateItem, carouselData[i]);
+};
 
 results.insertAdjacentHTML('beforeend', listItems);
 
 
 // karuzela :
+
 var elem = document.querySelector('.main-carousel');
+
 var flkty = new Flickity(elem, {
-// opcje
+    // opcje
     cellAlign: 'left',
     contain: true,
     prevNextButtons: false,
@@ -25,7 +24,7 @@ var flkty = new Flickity(elem, {
     hash: true,
 });
 
-// buttony i progressbar :
+// progressbar :
 
 
 var progressBar = document.querySelector('.progress-bar')
@@ -34,4 +33,3 @@ flkty.on('scroll', function (progress) {
     progress = Math.max(0, Math.min(1, progress));
     progressBar.style.width = progress * 100 + '%';
 });
-
