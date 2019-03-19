@@ -10,7 +10,6 @@ $body-color: #1e272e;
     border-radius: $radius;
 }
 
-
 * {
     box-sizing: border-box;
 }
@@ -26,11 +25,11 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     color: $body-color;
-    font-style: oblique 40deg;
-    font-size: 2.2em;
+    font-style: oblique 10deg;
+    font-size: 1.2em;
     text-align: center;
     border: 2px solid $text;
-    width: 350px;
+    width: 300px;
     background-color: $text-color;
 }
 
@@ -48,6 +47,7 @@ body {
     -ms-filter: grayscale(100%);
     overflow: hidden;
     background-size: cover;
+
     &:hover {
         filter: none;
     }
@@ -64,35 +64,43 @@ body {
 }
 
 .progress-bar {
+    height: 20px;
+    width: 0;
     background: $text-color;
 }
 
-
 .button {
-    position: absolute;
-    width: 130px;
-	height: 50px;
-	top: calc(50vh - 35px);
-    border: 1px solid $text-color;
-    background-color: $text-color; 
+    margin-top: 25px;
+    margin-left: 15px;
+    text-decoration: none;
+    border: 1px solid $text;
     @include border-radius(12px);
-    padding: 8px;
+    padding: 10px;
+    background-color: $text-color;
+    width: 150px;
+    color: $body-color;
     font-size: 22px;
-
-    a {
-	    text-decoration: none;
-	    color: $body-color;
-    }
+    padding-top: 13px;
+    display: block;
 }
 
 h1 {
-    color: $text;
+    color: $body-color;
 }
 
+a {
+    text-decoration: none;
+    border: 1px solid;
+    @include border-radius(12px);
+    padding: 6px;
+    background-color: $text-color;
+    color: $text;
+    font-size: 22px;
+}
 
 @media (max-width: 767px) {
 
     .carousel-cell {
-        height: 15vh;
+        height: 5vh;
     }
 }

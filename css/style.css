@@ -13,11 +13,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   color: #1e272e;
-  font-style: oblique 40deg;
-  font-size: 2.2em;
+  font-style: oblique 10deg;
+  font-size: 1.2em;
   text-align: center;
   border: 2px solid #ffffff;
-  width: 350px;
+  width: 300px;
   background-color: #feca57;
 }
 
@@ -52,33 +52,43 @@ body {
 }
 
 .progress-bar {
+  height: 20px;
+  width: 0;
   background: #feca57;
 }
 
 .button {
-  position: absolute;
-  width: 130px;
-  height: 50px;
-  top: calc(50vh - 35px);
-  border: 1px solid #feca57;
-  background-color: #feca57;
-  border-radius: 12px;
-  padding: 8px;
-  font-size: 22px;
-}
-
-.button a {
+  margin-top: 25px;
+  margin-left: 15px;
   text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #feca57;
+  width: 150px;
   color: #1e272e;
+  font-size: 22px;
+  padding-top: 13px;
+  display: block;
 }
 
 h1 {
+  color: #1e272e;
+}
+
+a {
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 12px;
+  padding: 6px;
+  background-color: #feca57;
   color: #ffffff;
+  font-size: 22px;
 }
 
 @media (max-width: 767px) {
   .carousel-cell {
-    height: 15vh;
+    height: 5vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
