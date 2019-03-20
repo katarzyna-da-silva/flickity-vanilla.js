@@ -44,3 +44,9 @@ var previousButton = document.querySelector('.button-previous');
 previousButton.addEventListener('click', function () {
     flkty.previous();
 });
+
+//buttons reset :
+var resetButton = document.querySelector('#reset');
+resetButton.addEventListener('click', function(){
+    flkty.select(0);
+})

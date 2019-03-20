@@ -19,4 +19,6 @@ h1 { color: #1e272e; }
 
 a { text-decoration: none; border: 1px solid; border-radius: 12px; padding: 6px; background-color: #feca57; color: #ffffff; font-size: 22px; }
 
+#reset { text-decoration: none; border: 1px solid #ffffff; padding: 6px; background-color: #feca57; height: 25px; width: 50px; color: #ffffff; font-size: 12px; }
+
 @media (max-width: 767px) { .carousel-cell { height: 5vh; } }
