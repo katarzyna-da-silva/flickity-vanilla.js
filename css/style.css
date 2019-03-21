@@ -4,15 +4,16 @@
 
 body {
   font-family: sans-serif;
-  background: #1e272e;
+  background: #006266;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  color: #1e272e;
+  color: #006266;
   font-style: oblique 10deg;
   font-size: 1.2em;
   text-align: center;
@@ -51,54 +52,32 @@ body {
   color: #ffffff;
 }
 
+#reset {
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  padding: 6px;
+  background-color: #feca57;
+  height: 25px;
+  width: 50px;
+  color: #ffffff;
+  font-size: 12px;
+}
+
 .progress-bar {
   height: 20px;
   width: 0;
   background: #feca57;
 }
 
-.button {
-  margin-top: 25px;
-  margin-left: 15px;
-  text-decoration: none;
-  border: 1px solid #ffffff;
-  border-radius: 12px;
-  padding: 10px;
-  background-color: #feca57;
-  width: 150px;
-  color: #1e272e;
-  font-size: 22px;
-  padding-top: 13px;
-  display: block;
-}
-
-h1 {
-  color: #1e272e;
-}
-
-a {
-  text-decoration: none;
-  border: 1px solid;
-  border-radius: 12px;
-  padding: 6px;
-  background-color: #feca57;
-  color: #ffffff;
-  font-size: 22px;
+#map {
+  height: 45vh;
+  min-height: 250px;
+  width: 100%;
 }
 
 @media (max-width: 767px) {
   .carousel-cell {
     height: 5vh;
   }
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-#map {
-  height: 400px;
-  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
