@@ -1,20 +1,13 @@
-* { box-sizing: border-box; }
+body { font-family: sans-serif; background: #2c3e50; margin: 0; text-align: center; padding: 10px; }
 
-body { font-family: sans-serif; background: #006266; margin: 0; padding: 0; text-align: center; }
+.container { width: 400px; margin: 0 auto; }
 
-.container { max-width: 1200px; margin: 0 auto; color: #006266; font-style: oblique 10deg; font-size: 1.2em; text-align: center; border: 2px solid #ffffff; width: 300px; background-color: #feca57; }
+section { padding: 10px; text-align: center; }
 
-.carousel-cell { border-radius: 6px; counter-increment: carousel-cell; width: 100%; margin-right: 5vw; height: 45vh; min-height: 250px; filter: grayscale(100%); -moz-filter: grayscale(100%); -webkit-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); overflow: hidden; background-size: cover; }
+.accordion { border: 1px solid #bdc3c7; }
 
-.carousel-cell:hover { filter: none; }
+.accordion h3 { background-color: #95a5a6; margin: 0; padding: 5px; border: 1px solid #bdc3c7; border-bottom: none; cursor: pointer; }
 
-/* cell number */
-.carousel-cell:before { display: block; text-align: center; content: counter(carousel-cell); line-height: 200px; font-size: 80px; color: #ffffff; }
+.accordion h3 + div { height: 0; overflow: hidden; border: 1px solid #bdc3c7; border-bottom: none; transition: height 0.5s; }
 
-#reset { text-decoration: none; border: 1px solid #ffffff; padding: 6px; background-color: #feca57; height: 25px; width: 50px; color: #ffffff; font-size: 12px; }
-
-.progress-bar { height: 20px; width: 0; background: #feca57; }
-
-#map { height: 45vh; min-height: 250px; width: 100%; }
-
-@media (max-width: 767px) { .carousel-cell { height: 5vh; } }
+.accordion h3.active + div { height: 100px; overflow: auto; }

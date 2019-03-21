@@ -1,94 +1,45 @@
-$color-decoration: #95afc0;
-$text-color: #feca57;
-$text: #ffffff;
-$body-color: #006266;
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: sans-serif;
-  background: $body-color;
+  background: #2c3e50;
   margin: 0;
-  padding: 0;
   text-align: center;
+  padding: 10px;
 }
 
 .container {
-  max-width: 1200px;
+  width: 400px;
   margin: 0 auto;
-  color: $body-color;
-  font-style: oblique 10deg;
-  font-size: 1.2em;
+}
+
+section {
+  padding: 10px;
   text-align: center;
-  border: 2px solid $text;
-  width: 300px;
-  background-color: $text-color;
 }
 
-.carousel-cell {
-  @include border-radius(6px);
-  counter-increment: carousel-cell;
-  width: 100%;
-  margin-right: 5vw;
-  height: 45vh;
-  min-height: 250px;
-  filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  overflow: hidden;
-  background-size: cover;
+.accordion {
+  border: 1px solid #bdc3c7;
 
-  &:hover {
-    filter: none;
-  }
-}
+  h3 {
+    background-color: #95a5a6;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #bdc3c7;
+    border-bottom: none;
+    cursor: pointer;
 
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: $text;
-}
+    +div {
+      height: 0;
+      overflow: hidden;
+      border: 1px solid #bdc3c7;
+      border-bottom: none;
+      transition: height 0.5s;
+    }
 
-#reset {
-  text-decoration: none;
-  border: 1px solid $text;
-  padding: 6px;
-  background-color: $text-color;
-  height: 25px;
-  width: 50px;
-  color: $text;
-  font-size: 12px;
-}
-
-.progress-bar {
-  height: 20px;
-  width: 0;
-  background: $text-color;
-}
-
-#map {
-  height: 45vh;
-  min-height: 250px;
-  width: 100%;
-}
-
-@media (max-width: 767px) {
-  .carousel-cell {
-    height: 5vh;
+    &.active {
+      +div {
+        height: 100px;
+        overflow: auto;
+      }
+    }
   }
 }
