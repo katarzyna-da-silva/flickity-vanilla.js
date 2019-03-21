@@ -80,7 +80,7 @@ window.initMap = function () {
     var marker = [];
     var coordsAdd = carouselData[0].coords;
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 9,
+        zoom: 6,
         center: coordsAdd
     });
 
@@ -92,6 +92,18 @@ window.initMap = function () {
             map: map
         });
     }
+
+    function markerAdd(marker, index) {
+        marker.addListener('click', function () {
+            flkty.select(index);
+        });
+
+    }
+
+    flkty.on('change', function (index) {
+        map.panTo(carouselData[index].coords);
+        map.setZoom(6);
+    });
 };
 
 //buttons reset :
