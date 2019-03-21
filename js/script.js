@@ -75,7 +75,7 @@ var flkty = new Flickity(elem, {
     hash: true,
 });
 
-// mapa google :
+// mapa google dodanie markerow do zdiec :
 window.initMap = function () {
     var marker = [];
     var coordsAdd = carouselData[0].coords;
@@ -92,7 +92,7 @@ window.initMap = function () {
             map: map
         });
     }
-
+    // funkcja powiazania karuzeli z mapa :
     function markerAdd(marker, index) {
         marker.addListener('click', function () {
             flkty.select(index);
