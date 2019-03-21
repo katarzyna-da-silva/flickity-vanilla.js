@@ -1,83 +1,20 @@
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-body {
-  font-family: sans-serif;
-  background: #006266;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+body { font-family: sans-serif; background: #006266; margin: 0; padding: 0; text-align: center; }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  color: #006266;
-  font-style: oblique 10deg;
-  font-size: 1.2em;
-  text-align: center;
-  border: 2px solid #ffffff;
-  width: 300px;
-  background-color: #feca57;
-}
+.container { max-width: 1200px; margin: 0 auto; color: #006266; font-style: oblique 10deg; font-size: 1.2em; text-align: center; border: 2px solid #ffffff; width: 300px; background-color: #feca57; }
 
-.carousel-cell {
-  border-radius: 6px;
-  counter-increment: carousel-cell;
-  width: 100%;
-  margin-right: 5vw;
-  height: 45vh;
-  min-height: 250px;
-  filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  overflow: hidden;
-  background-size: cover;
-}
+.carousel-cell { border-radius: 6px; counter-increment: carousel-cell; width: 100%; margin-right: 5vw; height: 45vh; min-height: 250px; filter: grayscale(100%); -moz-filter: grayscale(100%); -webkit-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); overflow: hidden; background-size: cover; }
 
-.carousel-cell:hover {
-  filter: none;
-}
+.carousel-cell:hover { filter: none; }
 
 /* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: #ffffff;
-}
+.carousel-cell:before { display: block; text-align: center; content: counter(carousel-cell); line-height: 200px; font-size: 80px; color: #ffffff; }
 
-#reset {
-  text-decoration: none;
-  border: 1px solid #ffffff;
-  padding: 6px;
-  background-color: #feca57;
-  height: 25px;
-  width: 50px;
-  color: #ffffff;
-  font-size: 12px;
-}
+#reset { text-decoration: none; border: 1px solid #ffffff; padding: 6px; background-color: #feca57; height: 25px; width: 50px; color: #ffffff; font-size: 12px; }
 
-.progress-bar {
-  height: 20px;
-  width: 0;
-  background: #feca57;
-}
+.progress-bar { height: 20px; width: 0; background: #feca57; }
 
-#map {
-  height: 45vh;
-  min-height: 250px;
-  width: 100%;
-}
+#map { height: 45vh; min-height: 250px; width: 100%; }
 
-@media (max-width: 767px) {
-  .carousel-cell {
-    height: 5vh;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 767px) { .carousel-cell { height: 5vh; } }

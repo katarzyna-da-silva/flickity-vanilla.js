@@ -80,15 +80,15 @@ window.initMap = function () {
     var marker = [];
     var coordsAdd = carouselData[0].coords;
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 8,
+        zoom: 9,
         center: coordsAdd
     });
 
     for (var i = 0; i < carouselData.length; i++) {
-        coordsAddPhotos = carouselData[i].coords;
-        console.log('marker', coordsAddPhotos);
+        coordsAdd = carouselData[i].coords;
+        console.log('marker', coordsAdd);
         marker[i] = new google.maps.Marker({
-            position: coordsAddPhotos,
+            position: coordsAdd,
             map: map
         });
     }
